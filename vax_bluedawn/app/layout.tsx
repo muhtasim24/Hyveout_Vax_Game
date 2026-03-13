@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <video 
           className="fixed inset-0 w-full h-full z-[-1]"
@@ -36,7 +36,7 @@ export default function RootLayout({
           >
           <source src="/background.mp4" type="video/mp4"/>
         </video>
-        <main className="relative z-0">{children}</main>
+        {children}
       </body>
     </html>
   );
