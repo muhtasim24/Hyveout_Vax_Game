@@ -28,7 +28,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <video 
-          className="fixed inset-0 w-full h-full z-[-1]"
+          className="fixed w-full h-full z-[-10]"
           autoPlay
           loop
           muted
