@@ -35,7 +35,9 @@ export default function CodeInput() {
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
             <span className="h-[1em] flex items-center justify-center">{code[i] || " "}</span>
-            <span>—</span>
+            
+            {/* DASH */}
+            <span className="text-blue-500 text-6xl font-bold">—</span>
           </div>
         ))}
       </div>
