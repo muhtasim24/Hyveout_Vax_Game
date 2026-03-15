@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
       <h1>Hi</h1>
-      <CodeInput></CodeInput>
-      <Link href="/tracks">ENTER CODE</Link>
+      <CodeInput />
+      <h1>ENTER CODE</h1>
       <Link href="/snippets">WATCH SNIPPETS</Link>
     </div>
   );
