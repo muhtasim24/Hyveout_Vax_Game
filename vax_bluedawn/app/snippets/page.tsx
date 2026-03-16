@@ -5,7 +5,7 @@ export default function Snippets() {
     return (
         <div>
             <h1>SNIPPET PAGE</h1>
-            <Link href="/">GO BACK</Link>
+            <Link href="/" className="text-white">GO BACK</Link>
         </div>
     )
 }

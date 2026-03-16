@@ -5,16 +5,17 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div>
+      <div className="">
         <Image 
           src={"/logo.png"} 
           alt="blue dawn logo"
-          width = {300}
-          height = {300}
+          width = {200}
+          height = {200}
+          className="w-150 h-55"
         />
       </div>
 
-      <div>
+      <div className="flex flex-col items-center space-y-6 mt-60">
         <CodeInput />
       </div>
       
