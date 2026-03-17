@@ -13,8 +13,8 @@ export default function TrackCard( { track, onClick, isSelected } : Props) {
     return (
     <div
       onClick={onClick}
-      className={`p-4 border rounded-lg cursor-pointer text-center
-      ${isSelected ? "bg-blue-500 text-white" : "bg-white"}
+      className={`cursor-pointer text-center text-2xl
+      ${isSelected ? "text-blue-400 scale-140" : "text-white scale-100"}
       `}
     >
       {track.name}

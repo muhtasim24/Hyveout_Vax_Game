@@ -9,11 +9,10 @@ export default async function Tracks() {
     const trackList = await getTrack();
     console.log(trackList);
     return (
-        <div>
+        <div className="flex flex-col justify-center items-center gap-10">
             <TrackSelect trackList = {trackList}/>
-
-            <Link href="/" className="text-white">GO BACK</Link>
-        
+            <h1 className="text-white text-5xl">4/17/26</h1>
+            <Link href="/" className="text-white text-3xl">GO BACK</Link>
         </div>
     )
 }
