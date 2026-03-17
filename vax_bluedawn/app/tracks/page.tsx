@@ -7,7 +7,7 @@ import TrackSelect from "@/components/trackSelect";
 
 export default async function Tracks() {
     const trackList = await getTrack();
-
+    console.log(trackList);
     return (
         <div>
             <TrackSelect trackList = {trackList}/>

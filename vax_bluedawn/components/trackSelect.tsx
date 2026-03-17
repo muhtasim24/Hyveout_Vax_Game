@@ -12,20 +12,21 @@ type Props = {
 
 export default function TrackSelect( {trackList} : Props) {
 
-    const [selectedTrack, setSelectedTrack] = useState<Track>(trackList[0]);
+    const [selectedTrack, setSelectedTrack] = useState<Track>(trackList[0]); 
 
     function handleTrackClick(track: Track) {
         setSelectedTrack(track);
     }
 
     return (
-        <div>
+        <div className="flex flex-col justify-center items-center">
             {selectedTrack && (
                 <Image 
                     src = {selectedTrack.image}
                     alt= {selectedTrack.name}
                     width = {100}
                     height = {100}
+                    className = "w-100"
                 />
             )}
 
