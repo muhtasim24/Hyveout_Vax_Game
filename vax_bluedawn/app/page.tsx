@@ -7,19 +7,19 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center">
       <div className="">
         <Image 
-          src={"/logo.png"} 
-          alt="blue dawn logo"
+          src={"/logo1.png"} 
+          alt="blueDawn logo"
           width = {200}
           height = {200}
-          className="w-150 h-55"
+          className="w-100 h-20 mt-10 float"
         />
       </div>
 
-      <div className="flex flex-col items-center space-y-6 mt-20">
+      <div className="flex flex-col items-center space-y-6 mt-30">
         <CodeInput />
       </div>
       
-      <div className="flex flex-col items-center space-y-2 mt-10">
+      <div className="flex flex-col items-center space-y-2 mt-60">
         <Link href="/snippets" className="text-2xl">WATCH SNIPPETS</Link>
       </div>
     </div>
