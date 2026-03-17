@@ -15,11 +15,11 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col items-center space-y-6 mt-60">
+      <div className="flex flex-col items-center space-y-6 mt-20">
         <CodeInput />
       </div>
       
-      <div className="flex flex-col items-center space-y-2 mb-4 text-white">
+      <div className="flex flex-col items-center space-y-2 mt-40">
         <Link href="/snippets" className="text-2xl">WATCH SNIPPETS</Link>
       </div>
     </div>
