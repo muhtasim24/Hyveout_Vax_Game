@@ -19,7 +19,7 @@ export default function Home() {
         <CodeInput />
       </div>
       
-      <div className="flex flex-col items-center space-y-2 mt-40">
+      <div className="flex flex-col items-center space-y-2 mt-10">
         <Link href="/snippets" className="text-2xl">WATCH SNIPPETS</Link>
       </div>
     </div>

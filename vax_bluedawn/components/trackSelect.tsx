@@ -26,7 +26,7 @@ export default function TrackSelect( {trackList} : Props) {
                     alt= {selectedTrack.name}
                     width = {100}
                     height = {100}
-                    className = "w-70"
+                    className = "w-65"
                 />
             )}
 
