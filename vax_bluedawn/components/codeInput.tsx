@@ -51,7 +51,7 @@ export default function CodeInput() {
             </span>
             
             {/* DASH */}
-            <span className="text-blue-700 text-6xl font-bold [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white]">—</span>
+            <span className="text-blue-700 text-6xl font-bold [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] scale-y-140">—</span>
           </div>
         ))}
       </div>

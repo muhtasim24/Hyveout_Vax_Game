@@ -11,7 +11,7 @@ export default function Home() {
           alt="blueDawn logo"
           width = {200}
           height = {200}
-          className="w-100 h-15 mt-10 float"
+          className="w-80 h-15 mt-10 float"
         />
       </div>
 
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       
       <div className="flex flex-col items-center space-y-2 mt-80">
-        <Link href="/snippets" className="text-2xl">WATCH SNIPPETS</Link>
+        <Link href="/snippets" className="text-2xl cursor-pointer hover:text-red-500 active:text-red-700">WATCH SNIPPETS</Link>
       </div>
     </div>
   );

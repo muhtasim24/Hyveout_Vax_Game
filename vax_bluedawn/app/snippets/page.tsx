@@ -15,7 +15,7 @@ export default function Snippets() {
                     alt="blue dawn logo"
                     width = {200}
                     height = {200}
-                    className="w-100 h-15 mt-10 float"
+                    className="w-80 h-15 mt-10 float"
                 />
             </div>
 
@@ -27,7 +27,12 @@ export default function Snippets() {
 
             </div>
 
-            <Link href="/" className="text-white text-3xl">GO BACK</Link>
+            <Link href="/" 
+                className="text-white text-2xl cursor-pointer 
+                hover:text-red-500 
+                active:text-red-700"
+                
+                >GO BACK</Link>
         </div>
     )
 }

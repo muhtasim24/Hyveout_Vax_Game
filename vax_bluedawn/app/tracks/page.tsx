@@ -13,7 +13,7 @@ export default async function Tracks() {
             <TrackSelect trackList = {trackList}/>
 
             <h1 className="text-white text-4xl">4/17/26</h1>
-            <Link href="/" className="text-white text-3xl">GO BACK</Link>
+            <Link href="/" className="text-white text-2xl hover:text-red-500 active:text-red-700">GO BACK</Link>
         </div>
     )
 }
