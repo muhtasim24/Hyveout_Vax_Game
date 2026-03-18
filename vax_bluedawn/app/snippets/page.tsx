@@ -19,11 +19,11 @@ export default function Snippets() {
                 />
             </div>
 
-            <div className = "grid grid-cols-2 gap-8 mt-10">
-                <SnippetVid video = {img}/>
-                <SnippetVid video = {img}/>
-                <SnippetVid video = {img}/>
-                <SnippetVid video = {img}/>
+            <div className = "flex flex-col gap-8 mt-10">
+                <SnippetVid video = {"/video1.mp4"} locked = {false}/>
+                <SnippetVid video = {img} locked = {true}/>
+                <SnippetVid video = {img} locked = {true}/>
+                <SnippetVid video = {img} locked = {true}/>
 
             </div>
 

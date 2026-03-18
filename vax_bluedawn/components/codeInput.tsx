@@ -21,7 +21,7 @@ export default function CodeInput() {
         setTimeout( () => {
           setError(false);
           setCode("")
-        }, 500)
+        }, 600)
       }
     }
   }
