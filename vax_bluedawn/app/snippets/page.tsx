@@ -15,7 +15,7 @@ export default function Snippets() {
                     alt="blue dawn logo"
                     width = {200}
                     height = {200}
-                    className="w-100 h-20 mt-10 float"
+                    className="w-100 h-15 mt-10 float"
                 />
             </div>
 
