@@ -5,20 +5,32 @@ import { useRouter } from "next/navigation"
 
 export default function CodeInput() {
   const [code, setCode] = useState("")
+  const [error, setError] = useState(false);
   const router = useRouter()
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const value = e.target.value.toLowerCase().slice(0,4)
     setCode(value)
 
-    if (value === "abcd") {
-      router.push("/tracks")
+    if (value.length === 4) {
+      if (value === "abcd") {
+        router.push("/tracks")
+      } else {
+        setError(true);
+
+        setTimeout( () => {
+          setError(false);
+          setCode("")
+        }, 500)
+      }
     }
   }
+  
+  
 
   return (
     <div
-      className="flex justify-center"
+      className= {`flex justify-center ${error ? "shake":""}`}
       onClick={() => document.getElementById("code-input")?.focus()}
     >
       <input
@@ -34,7 +46,9 @@ export default function CodeInput() {
       <div className="flex gap-6 text-4xl">
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
-            <span className="h-[1em] flex items-center justify-center text-white">{code[i] || " "}</span>
+            <span className={`h-[1em] flex items-center justify-center ${error ? "text-red-500" : "text-white"}`}>
+              {code[i] || " "}
+            </span>
             
             {/* DASH */}
             <span className="text-blue-500 text-6xl font-bold">—</span>

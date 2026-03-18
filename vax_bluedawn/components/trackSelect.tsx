@@ -20,7 +20,7 @@ export default function TrackSelect( {trackList} : Props) {
 
     return (
         <div className="flex flex-col justify-center items-center">
-            <div className="mt-10">
+            {/* <div className="mt-10">
                 {selectedTrack && (
                     <Image 
                         src = {selectedTrack.image}
@@ -30,6 +30,15 @@ export default function TrackSelect( {trackList} : Props) {
                         className = "w-60"
                     />
                 )}
+                </div> */}
+
+            <div className="mt-10">
+                <Image                        
+                    src = {"/logo1.png"}
+                    alt= {"logo1"}
+                    width = {100}
+                    height = {100}
+                    className = "w-60"/>
             </div>
 
             <div className="flex flex-col gap-4 mt-30">
@@ -38,8 +47,8 @@ export default function TrackSelect( {trackList} : Props) {
                     <TrackCard 
                         key = {track.id}
                         track = {track}
-                        onClick = { () => handleTrackClick(track)}
-                        isSelected = {selectedTrack?.id === track.id}
+                        // onClick = { () => handleTrackClick(track)}
+                        // isSelected = {selectedTrack?.id === track.id}
                     />
                 ))}
             </div>

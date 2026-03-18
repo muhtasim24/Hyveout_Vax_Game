@@ -5,17 +5,20 @@ import Image from "next/image";
 
 type Props = {
     track: Track;
-    onClick: () => void;
-    isSelected: boolean;
+    // onClick: () => void;
+    // isSelected: boolean;
 }
 
-export default function TrackCard( { track, onClick, isSelected } : Props) {
+export default function TrackCard( { track } : Props) {
     return (
+    // <div
+    //   onClick={onClick}
+    //   className={`cursor-pointer text-center text-2xl
+    //   ${isSelected ? "text-blue-400 scale-140" : "text-white scale-100"}
+    //   `}
+    // >
     <div
-      onClick={onClick}
-      className={`cursor-pointer text-center text-2xl
-      ${isSelected ? "text-blue-400 scale-140" : "text-white scale-100"}
-      `}
+      className="text-center text-2xl text-white [text-shadow:_2px_0_0_blue,_-2px_0_0_blue,_0_2px_0_blue,_0_-2px_0_blue]"
     >
       {track.name}
     </div>
