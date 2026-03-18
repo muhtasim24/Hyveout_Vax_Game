@@ -15,11 +15,11 @@ export default function Snippets() {
                     alt="blue dawn logo"
                     width = {200}
                     height = {200}
-                    className="w-80 h-15 mt-10 float"
+                    className="w-80 h-15 mt-10 float md:w-160 md:h-30"
                 />
             </div>
 
-            <div className = "flex flex-col gap-8 mt-1">
+            <div className = "flex flex-col gap-8 mt-1 md:grid grid-cols-2">
                 <SnippetVid video = {"/video1.mp4"} locked = {false}/>
                 <SnippetVid video = {img} locked = {true}/>
                 <SnippetVid video = {img} locked = {true}/>
@@ -30,9 +30,11 @@ export default function Snippets() {
             <Link href="/" 
                 className="text-white text-2xl cursor-pointer 
                 hover:text-red-500 
-                active:text-red-700"
-                
-                >GO BACK</Link>
+                active:text-red-700
+                md:text-4xl"
+            >
+                GO BACK
+            </Link>
         </div>
     )
 }

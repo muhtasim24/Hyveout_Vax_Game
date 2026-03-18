@@ -51,5 +51,22 @@ export const TrackList: Track[] = [
         id: "8",
         name: "TRACK 8",
         image: "/logo1.png"
+    },
+    
+    {
+        id: "9",
+        name: "TRACK 9",
+        image: "/logo1.png"
+    },
+
+    {
+        id: "10",
+        name: "TRACK 10",
+        image: "/logo1.png"
+    },
+        {
+        id: "11",
+        name: "TRACK 11",
+        image: "/logo1.png"
     }
 ]

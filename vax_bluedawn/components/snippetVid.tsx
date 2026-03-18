@@ -17,11 +17,11 @@ export default function SnippetVid( {video, locked} : Props) {
                     alt = {"videos"}
                     width = {100}
                     height = {100}
-                    className = "w-27 h-32 flex justify-center items-center p-8"
+                    className = "w-27 h-32 flex justify-center items-center p-8 md:w-40 md:h-60 md:p-12"
                 />
             ) : (
                 <video
-                    className="w-60 h-34"
+                    className="w-60 h-34 md:w-107 md:h-60"
                     controls>
                         <source src={video} type="video/mp4" />
                     </video>

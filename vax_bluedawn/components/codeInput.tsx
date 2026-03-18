@@ -43,7 +43,7 @@ export default function CodeInput() {
         className="opacity-0 absolute"
       />
 
-      <div className="flex gap-6 text-4xl">
+      <div className="flex gap-6 text-4xl md:text-5xl">
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
             <span className={`h-[1em] flex items-center justify-center ${error ? "text-red-500" : "text-white"}`}>
@@ -51,7 +51,7 @@ export default function CodeInput() {
             </span>
             
             {/* DASH */}
-            <span className="text-blue-700 text-6xl font-bold [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] scale-y-140">—</span>
+            <span className="text-blue-700 text-6xl font-bold [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] scale-y-140 md:text-7xl">—</span>
           </div>
         ))}
       </div>

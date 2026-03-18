@@ -41,7 +41,7 @@ export default function TrackSelect( {trackList} : Props) {
                     className = "w-60"/>
             </div>
 
-            <div className="flex flex-col gap-4 mt-30">
+            <div className="flex flex-col gap-4 mt-20">
                 {trackList.map(track => (
                     
                     <TrackCard 

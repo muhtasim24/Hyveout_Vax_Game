@@ -18,7 +18,7 @@ export default function TrackCard( { track } : Props) {
     //   `}
     // >
     <div
-      className="text-center text-2xl text-white [text-shadow:_2px_0_0_blue,_-2px_0_0_blue,_0_2px_0_blue,_0_-2px_0_blue]"
+      className="text-center text-2xl text-white [text-shadow:_2px_0_0_blue,_-2px_0_0_blue,_0_2px_0_blue,_0_-2px_0_blue] "
     >
       {track.name}
     </div>
