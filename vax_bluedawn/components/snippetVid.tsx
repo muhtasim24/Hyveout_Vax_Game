@@ -17,7 +17,7 @@ export default function SnippetVid( {video, locked} : Props) {
                     alt = {"videos"}
                     width = {100}
                     height = {100}
-                    className = "w-10 auto flex justify-center items-center"
+                    className = "w-30 auto flex justify-center items-center p-10"
                 />
             ) : (
                 <video
