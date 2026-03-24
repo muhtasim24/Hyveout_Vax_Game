@@ -10,7 +10,7 @@ export default function BirdBtn() {
                 alt="white bird"
                 width={100}
                 height={100}
-                className="block group-hover:hidden"
+                className="block group-hover:hidden group-active:hidden"
             />
 
             <Image 
@@ -18,7 +18,7 @@ export default function BirdBtn() {
                 alt="red bird"
                 width={100}
                 height={100}
-                className="hidden group-hover:block"
+                className="hidden group-hover:block group-active:block"
             />
         </div>
     )
