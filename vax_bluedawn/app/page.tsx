@@ -11,11 +11,11 @@ export default function Home() {
           alt="blueDawn logo"
           width = {300}
           height = {300}
-          className="w-90 h-60 mt-4 float md:w-100 md:h-70 md:-mt-7"
+          className="w-90 h-60 mt-0 float md:w-100 md:h-70 md:-mt-7"
         />
       </div>
 
-      <div className="flex flex-col items-center space-y-6 mt-30 md:mt-15 lg:mt-30">
+      <div className="flex flex-col items-center space-y-6 mt-20 md:mt-20 lg:mt-10">
         <CodeInput />
       </div>
       
