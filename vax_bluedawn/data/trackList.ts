@@ -3,70 +3,67 @@
 export type Track = {
     id: string
     name: string
-    image: string
+    prod: string
 }
 
 export const TrackList: Track[] = [
     {
         id: "1",
-        name: "TRACK 1",
-        image: "/logo1.png"
+        name: "So Good",
+        prod: "nxah + vvspipes"
     },
 
     {
         id: "2",
-        name: "TRACK 2",
-        image: "/logo1.png"
+        name: "M&Ms",
+        prod: "xami"
     },
 
     {
         id: "3",
-        name: "TRACK 3",
-        image: "/logo1.png"
+        name: "Hit me up",
+        prod: "viva"
     },
-        {
+    
+    {
         id: "4",
-        name: "TRACK 4",
-        image: "/logo1.png"
+        name: "Familia (ft. sevenk)",
+        prod: "3s + mj"
     },
 
     {
         id: "5",
-        name: "TRACK 5",
-        image: "/logo1.png"
+        name: "Lilac",
+        prod: "xami"
     },
 
     {
         id: "6",
-        name: "TRACK 6",
-        image: "/logo1.png"
+        name: "Crushed",
+        prod: "nxah + cld + mew3k"
     },
-        {
+    
+    {
         id: "7",
-        name: "TRACK 7",
-        image: "/logo1.png"
+        name: "Race (ft. slayer)",
+        prod: "wa"
     },
 
     {
         id: "8",
-        name: "TRACK 8",
-        image: "/logo1.png"
+        name: "Never die",
+        prod: "xami"
     },
     
     {
         id: "9",
-        name: "TRACK 9",
-        image: "/logo1.png"
+        name: "Best friend",
+        prod: "fc"
     },
 
     {
         id: "10",
-        name: "TRACK 10",
-        image: "/logo1.png"
-    },
-        {
-        id: "11",
-        name: "TRACK 11",
-        image: "/logo1.png"
+        name: "It's ok, don't trip",
+        prod: "wa + nxah"
     }
 ]

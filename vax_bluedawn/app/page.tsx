@@ -1,3 +1,4 @@
+import BirdBtn from "@/components/birdBtn";
 import CodeInput from "@/components/codeInput";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center">
       <div className="">
         <Image 
-          src={"/logo.png"} 
+          src={"/assets/logo.png"} 
           alt="blueDawn logo"
           width = {300}
           height = {300}
@@ -20,9 +21,11 @@ export default function Home() {
       </div>
       
       <div className="flex flex-col items-center space-y-2 mt-30 md:mt-30 lg:mt-60">
-        <Link href="/snippets" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">DATABASE</Link>
+        <Link href="/bluedawn" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">
+          <BirdBtn/>
+        </Link>
 
-        <Link href="/bluedawn" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">BLUE DAWN</Link>
+        <Link href="/snippets" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">DATABASE</Link>
       </div>
     </div>
   );

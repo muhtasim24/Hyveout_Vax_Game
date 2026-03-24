@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Press_Start_2P } from "next/font/google";
+import { GFS_Didot, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
 const player2 = Press_Start_2P( {
+  weight: '400',
+  subsets: ['latin'],
+})
+
+const didot = GFS_Didot( {
   weight: '400',
   subsets: ['latin'],
 })
@@ -20,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${player2.className}`}
+        className={`${didot.className}`}
       >
         <video 
           className="fixed w-full h-full object-cover z-[-10]"
