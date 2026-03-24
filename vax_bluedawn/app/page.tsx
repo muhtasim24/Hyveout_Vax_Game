@@ -6,26 +6,26 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="">
+      <div>
         <Image 
           src={"/assets/logo.png"} 
           alt="blueDawn logo"
           width = {300}
           height = {300}
-          className="w-90 h-60 mt-0 float md:w-100 md:h-70 md:-mt-7"
+          className=""
         />
       </div>
 
-      <div className="flex flex-col items-center space-y-6 mt-20 md:mt-20 lg:mt-10">
+      <div className="flex flex-col items-center mt-10 xl:mt-18">
         <CodeInput />
       </div>
       
-      <div className="flex flex-col items-center space-y-2 mt-30 md:mt-30 lg:mt-60">
-        <Link href="/bluedawn" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">
+      <div className="flex flex-col items-center w-[18vw] gap-2 mt-30 xl:mt-45">
+        <Link href="/bluedawn" className="cursor-pointer">
           <BirdBtn/>
         </Link>
 
-        <Link href="/snippets" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">DATABASE</Link>
+        <Link href="/snippets" className="text-3xl cursor-pointer text-white hover:text-red-500 active:text-red-700 font-bold xl:text-5xl">DATABASE</Link>
       </div>
     </div>
   );

@@ -46,7 +46,7 @@ export default function CodeInput() {
       <div className="flex gap-6 text-4xl md:text-5xl">
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
-            <span className={`h-[1em] flex items-center justify-center ${error ? "text-red-500" : "text-white"}`}>
+            <span className={`h-[1em] flex items-center justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
               {code[i] || " "}
             </span>
             
