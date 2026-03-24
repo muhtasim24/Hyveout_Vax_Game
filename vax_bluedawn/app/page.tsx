@@ -15,11 +15,11 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col items-center space-y-6 mt-30">
+      <div className="flex flex-col items-center space-y-6 mt-30 md:mt-15 lg:mt-30">
         <CodeInput />
       </div>
       
-      <div className="flex flex-col items-center space-y-2 mt-50 md:mt-60">
+      <div className="flex flex-col items-center space-y-2 mt-30 md:mt-30 lg:mt-60">
         <Link href="/snippets" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">DATABASE</Link>
 
         <Link href="/bluedawn" className="text-2xl cursor-pointer text-white hover:text-red-500 active:text-red-700 md:text-4xl">BLUE DAWN</Link>
