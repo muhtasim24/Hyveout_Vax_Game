@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function Snippets() {
 
-    const img: string = "/lock1.png";
+    const img: string = "/lock2.png";
 
     return (
         <div className="flex flex-col justify-center items-center gap-8">
             <div className="">
                 <Image 
-                    src={"/logo1.png"} 
+                    src={"/logo.png"} 
                     alt="blue dawn logo"
                     width = {200}
                     height = {200}
