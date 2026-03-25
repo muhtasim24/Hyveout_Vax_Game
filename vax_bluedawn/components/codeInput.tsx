@@ -17,6 +17,7 @@ export default function CodeInput( {onCorrectCode} : Props) {
     setCode(value)
 
     if (value.length === 4) {
+      (document.getElementById("code-input") as HTMLInputElement)?.blur();
       if (value === "abcd") {
         onCorrectCode();
       } else {
