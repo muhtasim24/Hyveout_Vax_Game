@@ -47,6 +47,7 @@ export default function Home() {
           muted
           playsInline
           preload="auto"
+          onCanPlay={ (e) => e.currentTarget.play()}
           onEnded = { () => router.push("/tracks")}
         />
       )} 
