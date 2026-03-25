@@ -5,22 +5,23 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="h-[80vh] flex flex-col justify-between items-center py-2">
       <div>
         <Image 
           src={"/assets/logo.png"} 
           alt="blueDawn logo"
           width = {300}
           height = {300}
-          className=""
+          className="lg:w-[20vw]"
+          
         />
       </div>
 
-      <div className="flex flex-col items-center mt-10 xl:mt-18">
+      <div className="">
         <CodeInput />
       </div>
       
-      <div className="flex flex-col items-center w-[18vw] gap-2 mt-30 xl:mt-45">
+      <div className="flex flex-col items-center gap-2">
         <Link href="/bluedawn" className="cursor-pointer">
           <BirdBtn/>
         </Link>
