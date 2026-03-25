@@ -22,7 +22,7 @@ export default function Home() {
           alt="blueDawn logo"
           width = {300}
           height = {300}
-          className="w-[clamp(300px,40vw,400px)] h-auto"
+          className="w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto"
           
         />
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
         <CodeInput onCorrectCode = {handleCorrectCode}/>
       </div>
       
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 -mb-8 lg:-mb-14">
         <Link href="/bluedawn" className="cursor-pointer">
           <BirdBtn/>
         </Link>

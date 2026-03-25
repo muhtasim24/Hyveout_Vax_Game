@@ -33,7 +33,7 @@ export default function TrackSelect( {trackList} : Props) {
                 )}
                 </div> */}
 
-            <div className="flex flex-col gap-4 mt-20">
+            <div className="flex flex-col gap-1 items-center justify-center mt-4">
                 {trackList.map(track => (
                     
                     <TrackCard 
