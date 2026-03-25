@@ -3,7 +3,11 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
-export default function CodeInput() {
+type Props = {
+  onCorrectCode: () => void;
+}
+
+export default function CodeInput( {onCorrectCode} : Props) {
   const [code, setCode] = useState("")
   const [error, setError] = useState(false);
   const router = useRouter()
@@ -14,7 +18,7 @@ export default function CodeInput() {
 
     if (value.length === 4) {
       if (value === "abcd") {
-        router.push("/tracks")
+        onCorrectCode();
       } else {
         setError(true);
 

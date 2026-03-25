@@ -23,7 +23,7 @@ export default function BirdBtn() {
             alt="white bird"
             width={100}
             height={100}
-            className="block group-hover:hidden"
+            className="block group-hover:hidden w-16 md:w-20 lg:w-24 h-auto"
         />
       )}
 
@@ -42,7 +42,7 @@ export default function BirdBtn() {
             alt="red bird"
             width={100}
             height={100}
-            className="hidden group-hover:block"
+            className="hidden group-hover:block w-16 md:w-20 lg:w-24 h-auto"
         />
       )}
     </div>
