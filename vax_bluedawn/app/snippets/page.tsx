@@ -14,13 +14,13 @@ export default function Snippets() {
                 <Image 
                     src={"/assets/logo.png"} 
                     alt="blue dawn logo"
-                    width = {200}
-                    height = {200}
-                    className="w-80 h-15 mt-10 float md:w-160 md:h-30"
+                    width = {300}
+                    height = {300}
+                    className="w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto"
                 />
             </div>
 
-            <div className = "flex flex-col gap-8 mt-1 md:grid grid-cols-2">
+            <div className = "flex flex-col gap-8 md:grid grid-cols-2 md:gap-x-70 max-h-[50vh] overflow-y-auto md:max-h-none md:overflow-visible">
                 <SnippetVid video = {"/videos/video1.mp4"} locked = {false}/>
                 <SnippetVid video = {img} locked = {true}/>
                 <SnippetVid video = {img} locked = {true}/>

@@ -21,11 +21,11 @@ export default async function Tracks() {
                     alt= {"logo"}
                     width = {300}
                     height = {300}
-                    className = "w-[clamp(300px,40vw,400px)] h-auto"
+                    className = "w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto"
                 />
             </div>
 
-            <div className="flex flex-col items-center -mt-6 lg:flex-row lg:justify-center lg:items-start lg: gap-6">
+            <div className="h-[60vh] flex flex-col items-center -mt-6 lg:flex-row lg:justify-center lg:items-start lg:gap-6 ">
 
                 {/* LEFT SIDE DESKTOP */}
                 <div className="hidden lg:flex flex-col gap-2">
@@ -39,7 +39,7 @@ export default async function Tracks() {
                         alt = "cover art"
                         width = {100}
                         height = {100}
-                        className="bg-white w-[clamp(80px,40vw,180px)] h-[clamp(40px, 20vw, 150px)]"
+                        className="bg-white w-[clamp(60px,30vw,150px)] h-[clamp(20px, 15vw, 140px)]"
                     />
                 </div>
 
