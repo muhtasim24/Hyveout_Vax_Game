@@ -31,7 +31,7 @@ export default function Home() {
         <CodeInput onCorrectCode = {handleCorrectCode}/>
       </div>
       
-      <div className="flex flex-col items-center gap-2 -mb-8 lg:-mb-14">
+      <div className="flex flex-col items-center gap-2">
         <Link href="/bluedawn" className="cursor-pointer">
           <BirdBtn/>
         </Link>
