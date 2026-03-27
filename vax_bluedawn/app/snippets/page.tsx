@@ -11,8 +11,8 @@ export default function Snippets() {
     return (
         <div className="flex flex-col justify-center items-center">
 
-            <div className="flex flex-col h-auto max-h-[380px] md:max-h-[480px] justify-center items-center overflow-hidden">
-                <div className = "flex flex-col gap-8 md:grid md:grid-cols-2 overflow-y-auto md:overflow-hidden">
+            <div className="flex flex-col h-auto justify-center items-center overflow-hidden">
+                <div className = "grid grid-cols-1 gap-8 md:grid-cols-2 overflow-y-auto md:overflow-hidden max-h-[300px] md:max-h-none">
                     <SnippetVid video = {"/videos/video1.mp4"} locked = {false}/>
                     <SnippetVid video = {img} locked = {true}/>
                     <SnippetVid video = {img} locked = {true}/>
