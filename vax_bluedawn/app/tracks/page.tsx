@@ -15,7 +15,7 @@ export default async function Tracks() {
     return (
         <div className="flex flex-col justify-center items-center">
 
-            <div className="h-[60vh] flex flex-col items-center -mt-6 lg:flex-row lg:justify-center lg:items-start lg:gap-6">
+            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start lg:gap-6">
 
                 {/* LEFT SIDE DESKTOP */}
                 <div className="hidden lg:flex flex-col gap-2">

@@ -22,7 +22,7 @@ export default function SnippetVid( {video, locked} : Props) {
                 />
             ) : (
                 <video
-                    className="w-full h-full object-cover"
+                    className="w-90% h-90% object-cover"
                     controls>
                         <source src={video} type="video/mp4" />
                     </video>
