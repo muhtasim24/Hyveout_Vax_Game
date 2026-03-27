@@ -15,7 +15,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col justify-between items-center gap-8 mt-8 pt-12">
+    <div className="flex flex-col justify-between items-center gap-8 pt-10">
 
       <CodeInput onCorrectCode = {handleCorrectCode}/>
 
