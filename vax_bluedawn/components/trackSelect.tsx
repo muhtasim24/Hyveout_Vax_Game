@@ -21,17 +21,6 @@ export default function TrackSelect( {trackList} : Props) {
 
     return (
         <div className="flex flex-col justify-center items-center">
-            {/* <div className="mt-10">
-                {selectedTrack && (
-                    <Image 
-                        src = {selectedTrack.image}
-                        alt= {selectedTrack.name}
-                        width = {100}
-                        height = {100}
-                        className = "w-60"
-                    />
-                )}
-                </div> */}
 
             <div className="flex flex-col gap-1 items-center justify-center mt-4">
                 {trackList.map(track => (
