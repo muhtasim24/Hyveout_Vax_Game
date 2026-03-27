@@ -13,9 +13,9 @@ export default async function Tracks() {
     const rightTrack = trackList.slice(5,10);
     console.log(trackList);
     return (
-        <div className="h-[80vh] flex flex-col justify-between items-center py-2">
+        <div className="flex flex-col justify-center items-center">
 
-            <div className="h-[60vh] flex flex-col items-center -mt-6 lg:flex-row lg:justify-center lg:items-start lg:gap-6 ">
+            <div className="h-[60vh] flex flex-col items-center -mt-6 lg:flex-row lg:justify-center lg:items-start lg:gap-6">
 
                 {/* LEFT SIDE DESKTOP */}
                 <div className="hidden lg:flex flex-col gap-2">

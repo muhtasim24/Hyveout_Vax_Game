@@ -10,7 +10,7 @@ type Props = {
 
 export default function SnippetVid( {video, locked} : Props) {
     return (
-        <div className="w-full max-w-[300px] aspect-video border-4 border-blue-700 bg-black flex justify-center items-center">
+        <div className="w-full max-w-[250px] aspect-video border-4 border-blue-700 bg-black flex justify-center items-center">
             {locked ? (
                 <Image 
                     src = {video}
