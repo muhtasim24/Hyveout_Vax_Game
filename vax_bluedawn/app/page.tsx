@@ -15,23 +15,12 @@ export default function Home() {
   }
 
   return (
-    <div className="h-[80vh] flex flex-col justify-between items-center py-2">
-      <div>
-        <Image 
-          src={"/assets/logo.png"} 
-          alt="blueDawn logo"
-          width = {300}
-          height = {300}
-          className="w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto"
-          
-        />
-      </div>
+    <div className="flex flex-col justify-between items-center gap-8 mt-8 pt-12">
 
-      <div className="">
-        <CodeInput onCorrectCode = {handleCorrectCode}/>
-      </div>
+      <CodeInput onCorrectCode = {handleCorrectCode}/>
+
       
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 mt-10">
         <Link href="/bluedawn" className="cursor-pointer">
           <BirdBtn/>
         </Link>
@@ -41,7 +30,7 @@ export default function Home() {
 
       {showAnimation && (
         <video
-          className="fixed w-full h-full object-cover z-[999]"
+          className="fixed inset-0 w-full h-full object-cover z-[999]"
           src = "/animation.mp4"
           autoPlay
           muted

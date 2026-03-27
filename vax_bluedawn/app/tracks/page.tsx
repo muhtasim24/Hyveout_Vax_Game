@@ -15,16 +15,6 @@ export default async function Tracks() {
     return (
         <div className="h-[80vh] flex flex-col justify-between items-center py-2">
 
-            <div>
-                <Image                        
-                    src = {"/assets/logo.png"}
-                    alt= {"logo"}
-                    width = {300}
-                    height = {300}
-                    className = "w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto"
-                />
-            </div>
-
             <div className="h-[60vh] flex flex-col items-center -mt-6 lg:flex-row lg:justify-center lg:items-start lg:gap-6 ">
 
                 {/* LEFT SIDE DESKTOP */}
