@@ -41,7 +41,7 @@ export default async function Tracks() {
                 </div>
 
                 {/* MOBILE ALWAYS */}
-                <div className="flex flex-col md:hidden">
+                <div className="flex flex-col md:hidden overflow-hidden">
                     <TrackSelect trackList={trackList} />
                 </div>
 
