@@ -17,7 +17,7 @@ export default function TrackCard( { track, onClick, isSelected } : Props) {
       ${isSelected ? "text-blue-400" : "text-white"}
       `}
     >
-      <h1 className="text-xl md:text-2xl lg:text-3xl hover:text-blue-400 whitespace-nowrap [-webkit-text-stroke:2px_white]">{track.name}</h1>
+      <h1 className="text-xl md:text-2xl lg:text-3xl hover:text-blue-400 whitespace-nowrap [-webkit-text-stroke:2px]">{track.name}</h1>
     </div>
     )
 }

@@ -37,7 +37,7 @@ export default function RootLayout({
           >
           <source src="/background.mp4" type="video/mp4"/>
         </video>
-        <div className="flex justify-center items-center z-[-9]">
+        <div className="flex justify-center items-center z-[-9] float">
           <Image 
             src={"/assets/logo.png"} 
             alt="blueDawn logo"
