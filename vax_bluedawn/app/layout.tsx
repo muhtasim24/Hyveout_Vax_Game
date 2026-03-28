@@ -42,7 +42,7 @@ export default function RootLayout({
           muted
           preload="auto"
           playsInline
-          poster="/fallBack.jpg"
+          poster="/assets/fallBack.jpg"
           >
           <source src="/background.mp4" type="video/mp4"/>
         </video>
