@@ -36,9 +36,11 @@ export default function RootLayout({
       >
         <video 
           className="fixed w-full h-full object-cover z-[-10]"
+          controls={false}
           autoPlay
           loop
           muted
+          preload="auto"
           playsInline
           >
           <source src="/background.mp4" type="video/mp4"/>
