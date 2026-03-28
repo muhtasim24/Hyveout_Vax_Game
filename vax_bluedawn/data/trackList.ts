@@ -45,7 +45,7 @@ export const TrackList: Track[] = [
     
     {
         id: "7",
-        name: "Race (ft. slayer)",
+        name: "Race (ft. slayr)",
         prod: "wa"
     },
 

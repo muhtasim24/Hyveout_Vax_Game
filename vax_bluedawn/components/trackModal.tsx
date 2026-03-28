@@ -3,6 +3,12 @@ import { Track } from "@/data/trackList";
 import Image from "next/image";
 import BirdBtn from "./birdBtn";
 
+import {Press_Start_2P} from "next/font/google";
+
+const player2 = Press_Start_2P( {
+    weight: '400',
+    subsets: ['latin'],
+  })
 
 type Props = {
     track: Track;
@@ -18,7 +24,7 @@ export default function TrackModal( {track, onClose} : Props) {
             
             onClick={ (e) => e.stopPropagation()}>
                 <h1 className="text-white text-3xl font-bold [-webkit-text-stroke:1px_white] md:text-5xl justify-start">PROD</h1>
-                <h1 className="text-purple-200 text-3xl [-webkit-text-stroke:1px] md:text-6xl">{track.prod}</h1>
+                <h1 className={`${player2.className} text-purple-200 text-3xl [-webkit-text-stroke:1px] md:text-4xl`}>{track.prod}</h1>
                 <button onClick = {onClose} className="cursor-pointer w-[10vw]">
                     <BirdBtn/>
                 </button>
