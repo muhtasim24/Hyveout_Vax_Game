@@ -17,7 +17,7 @@ export default async function Tracks() {
     
     console.log(trackList);
     return (
-        <div className="flex flex-col justify-center items-center -mt-8 md:mt-6">
+        <div className="flex flex-col justify-center items-center md:mt-6">
 
             <div className="w-full max-w-[900px] flex flex-col justify-center items-center md:flex-row md:justify-center md:items-center md:gap-10">
 
