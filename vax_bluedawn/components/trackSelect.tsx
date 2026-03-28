@@ -20,9 +20,7 @@ export default function TrackSelect( {trackList} : Props) {
     }
 
     return (
-        <div className="flex flex-col justify-center items-center">
-
-            <div className="flex flex-col gap-1 items-center justify-center mt-4">
+            <div className="flex flex-col justify-between h-full">
                 {trackList.map(track => (
                     
                     <TrackCard 
@@ -41,6 +39,6 @@ export default function TrackSelect( {trackList} : Props) {
                 )}
             </div>
 
-        </div>
+ 
     )
 }

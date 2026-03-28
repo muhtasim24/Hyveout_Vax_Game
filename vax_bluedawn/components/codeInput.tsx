@@ -51,12 +51,12 @@ export default function CodeInput( {onCorrectCode} : Props) {
       <div className="flex gap-6 text-4xl md:text-5xl">
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
-            <span className={`h-[1em] flex items-center justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
+            <span className={`h-[1em] flex items-center [-webkit-text-stroke:2px] justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
               {code[i] || " "}
             </span>
             
             {/* DASH */}
-            <span className="text-blue-700 text-6xl font-bold [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] scale-y-140 md:text-7xl">—</span>
+            <span className="text-blue-700 text-6xl font-bold [text-shadow:_2px_0_0_white,_-2px_0_0_white,_0_2px_0_white,_0_-2px_0_white] [-webkit-text-stroke:3px] scale-y-140 md:text-7xl">—</span>
           </div>
         ))}
       </div>

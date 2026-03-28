@@ -25,7 +25,7 @@ export default function Home() {
           <BirdBtn/>
         </Link>
 
-        <Link href="/snippets" className="text-3xl cursor-pointer text-white hover:text-red-500 active:text-red-700 font-bold xl:text-5xl w-auto">DATABASE</Link>
+        <Link href="/snippets" className="text-3xl cursor-pointer text-white hover:text-red-500 active:text-red-700 font-bold xl:text-5xl w-auto [-webkit-text-stroke:2px]">DATABASE</Link>
       </div>
 
       {showAnimation && (
