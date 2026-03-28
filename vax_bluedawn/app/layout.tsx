@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GFS_Didot, Press_Start_2P } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
+import localFont from "next/font/local";
 
 const player2 = Press_Start_2P( {
   weight: '400',
@@ -12,6 +13,11 @@ const didot = GFS_Didot( {
   weight: '400',
   subsets: ['latin'],
 })
+
+const blueScreen = localFont({
+  src: "../public/blueScreen.ttf",
+  variable: "--font-blue-screen",
+});
 
 export const metadata: Metadata = {
   title: "Vax Blue Dawn",
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${didot.className}`}
+        className={`${blueScreen.className}`}
       >
         <video 
           className="fixed w-full h-full object-cover z-[-10]"
