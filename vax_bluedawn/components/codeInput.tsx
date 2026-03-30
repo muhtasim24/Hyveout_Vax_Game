@@ -48,10 +48,10 @@ export default function CodeInput( {onCorrectCode} : Props) {
         className="opacity-0 absolute"
       />
 
-      <div className="flex gap-6 text-4xl md:text-5xl">
+      <div className="flex gap-6 text-6xl md:text-7xl">
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
-            <span className={`h-[1em] flex items-center [-webkit-text-stroke:1px] justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
+            <span className={`h-[1em] flex items-center justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
               {code[i] || " "}
             </span>
             
