@@ -33,10 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${blueScreen.className} min-h-screen flex flex-col`}
+        className={`${blueScreen.className} min-h-screen flex flex-col overflow-hidden`}
       >
         <BackgroundMedia/>
-        <div className="flex justify-center items-center z-[-9] floatLogo">
+        <div className="flex-shrink-0 flex justify-center items-center z-[-9] floatLogo">
           <Image 
             src={"/assets/logo.png"} 
             alt="blueDawn logo"
@@ -45,8 +45,10 @@ export default function RootLayout({
             className="w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto mt-6 z-[-9] md:mt-2"
           />
         </div>
-        {children}
-        <footer className = "text-center pt-6">
+        <div className="flex-1 min-h-0 flex flex-col justify-start items-center overflow-hidden">
+          {children}
+        </div>
+        <footer className = "flex-shrink-0 text-center pt-6">
           <h1 className = "text-white text-xl md:text-3xl">powered by hyveout</h1>
         </footer>
       </body>
