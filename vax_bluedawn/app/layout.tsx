@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${blueScreen.className}`}
+        className={`${blueScreen.className} min-h-screen flex flex-col`}
       >
         <BackgroundMedia/>
         <div className="flex justify-center items-center z-[-9] float">
@@ -43,10 +43,12 @@ export default function RootLayout({
             width = {300}
             height = {300}
             className="w-[clamp(300px,50vw,400px)] md:w-[clamp(200px,40vw,350px)] h-auto mt-6 z-[-9] md:mt-2"
-            
           />
         </div>
         {children}
+        <footer className = "text-center pt-6">
+          <h1 className = "text-white text-xl md:text-2xl ">powered by hyveout</h1>
+        </footer>
       </body>
     </html>
   );
