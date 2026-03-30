@@ -9,7 +9,7 @@ export default function Snippets() {
     const img: string = "/assets/lock.png";
 
     return (
-        <div className="w-full h-full flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
 
             <div className="flex flex-col h-auto justify-center items-center overflow-hidden">
                 <div className = "grid grid-cols-1 gap-8 md:grid-cols-2 overflow-y-auto no-scrollbar md:overflow-hidden max-h-[350px] md:max-h-none p-2">
