@@ -38,6 +38,11 @@
   animation: float 1s ease-in-out infinite;
 }
 
+.bird-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }

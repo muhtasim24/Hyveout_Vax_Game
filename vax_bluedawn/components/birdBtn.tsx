@@ -13,7 +13,7 @@ export default function BirdBtn() {
 
   return (
     <div
-      className="relative inline-block cursor-pointer group"
+      className="relative inline-block cursor-pointer group bird-float"
       onClick={handleClick}
     >
       {/* White bird: show if not hovered and not clicked */}
