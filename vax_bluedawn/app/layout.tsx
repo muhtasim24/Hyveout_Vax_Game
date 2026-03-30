@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${blueScreen.className} min-h-screen flex flex-col overflow-hidden`}
+        className={`${blueScreen.className} h-screen flex flex-col overflow-hidden`}
       >
         <BackgroundMedia/>
         <div className="flex-shrink-0 flex justify-center items-center z-[-9] floatLogo">
