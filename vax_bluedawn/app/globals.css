@@ -28,18 +28,18 @@
   100% { opacity: 0.2; }
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
-}
-
-.float {
+.floatLogo {
   animation: float 1s ease-in-out infinite;
 }
 
 .bird-float {
-  animation: float 2s ease-in-out infinite;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
 
 
