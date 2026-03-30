@@ -2,6 +2,12 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import {Press_Start_2P} from "next/font/google";
+
+const player2 = Press_Start_2P( {
+    weight: '400',
+    subsets: ['latin'],
+  })
 
 type Props = {
   onCorrectCode: () => void;
@@ -18,7 +24,7 @@ export default function CodeInput( {onCorrectCode} : Props) {
 
     if (value.length === 4) {
       (document.getElementById("code-input") as HTMLInputElement)?.blur();
-      if (value === "abcd") {
+      if (value === "0424") {
         onCorrectCode();
       } else {
         setError(true);
@@ -51,7 +57,7 @@ export default function CodeInput( {onCorrectCode} : Props) {
       <div className="flex gap-6 text-6xl md:text-7xl">
         {[0,1,2,3].map((i) => (
           <div key={i} className="flex flex-col items-center">
-            <span className={`h-[1em] flex items-center justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
+            <span className={`${player2.className} h-[1em] flex items-center justify-center font-bold ${error ? "text-red-500" : "text-white"}`}>
               {code[i] || " "}
             </span>
             
