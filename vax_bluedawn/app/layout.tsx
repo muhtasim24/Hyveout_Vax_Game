@@ -3,6 +3,7 @@ import { GFS_Didot, Press_Start_2P } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import localFont from "next/font/local";
+import BackgroundMedia from "@/components/backgroundMedia";
 
 const player2 = Press_Start_2P( {
   weight: '400',
@@ -34,18 +35,7 @@ export default function RootLayout({
       <body
         className={`${blueScreen.className}`}
       >
-        <video 
-          className="fixed w-full h-full object-cover z-[-10]"
-          controls={false}
-          autoPlay
-          loop
-          muted
-          preload="auto"
-          playsInline
-          poster="/assets/fallBack.jpg"
-          >
-          <source src="/background.mp4" type="video/mp4"/>
-        </video>
+        <BackgroundMedia/>
         <div className="flex justify-center items-center z-[-9] float">
           <Image 
             src={"/assets/logo.png"} 
