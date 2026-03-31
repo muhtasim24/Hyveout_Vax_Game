@@ -45,7 +45,7 @@ export default function RootLayout({
             className="w-[clamp(220px,50vw,300px)] md:w-[clamp(200px,40vw,350px)] h-auto mt-6 z-[-9] md:mt-2"
           />
         </div>
-        <div className="min-h-0 flex flex-col justify-center items-center overflow-hidden">
+        <div className="flex-1 min-h-0 flex flex-col justify-center items-center overflow-hidden">
           {children}
         </div>
         <footer className = "flex-shrink-0 text-center pt-4">

@@ -17,7 +17,7 @@ export default async function Tracks() {
     
     console.log(trackList);
     return (
-        <div className="flex flex-col justify-center items-center md:mt-6">
+        <div className="w-full h-hull flex flex-col justify-center items-center gap-4 px-4">
 
             <div className="w-full max-w-[900px] flex flex-col justify-center items-center md:flex-row md:justify-center md:items-center md:gap-10">
 
@@ -26,7 +26,7 @@ export default async function Tracks() {
                     <TrackSelect trackList={leftTrack} />
                 </div>
 
-                <div className="flex flex-col items-center flex-1 gap-4">
+                <div className="flex flex-col items-center flex-1 gap-2">
                     <h1 className={`${player2.className} text-blue-500 font-bold text-xl md:text-2xl lg:text-3xl md:-mt-2 [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] `}>4/24/26</h1>
                     
                     <div className="relative aspect-square w-[clamp(150px,15vw,250px)] md:w-[clamp(180px,20vw,270px)]">
@@ -45,13 +45,13 @@ export default async function Tracks() {
                 </div>
 
                 {/* MOBILE ALWAYS */}
-                <div className="flex flex-col md:hidden overflow-hidden">
+                <div className="flex flex-col md:hidden w-full max-h-[30vh] overflow-y-auto ">
                     <TrackSelect trackList={trackList} />
                 </div>
 
             </div>
 
-            <Link href="/" className="pt-4 md:pt-10">
+            <Link href="/" className="">
                 <BirdBtn/>
             </Link>
         </div>
