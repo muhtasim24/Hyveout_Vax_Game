@@ -45,13 +45,13 @@ export default async function Tracks() {
                 </div>
 
                 {/* MOBILE ALWAYS */}
-                <div className="flex flex-col md:hidden w-full ">
+                <div className="flex flex-col md:hidden w-full max-h-[30vh] overflow-y-auto">
                     <TrackSelect trackList={trackList} />
                 </div>
 
             </div>
 
-            <Link href="/" className="">
+            <Link href="/" className="flex-shrink-0">
                 <BirdBtn/>
             </Link>
         </div>
