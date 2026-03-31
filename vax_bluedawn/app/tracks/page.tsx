@@ -29,7 +29,7 @@ export default async function Tracks() {
                 <div className="flex flex-col items-center flex-1 gap-2">
                     <h1 className={`${player2.className} text-blue-500 font-bold text-xl md:text-2xl lg:text-3xl md:-mt-2 [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] `}>4/24/26</h1>
                     
-                    <div className="relative aspect-square w-[clamp(150px,15vw,250px)] md:w-[clamp(180px,20vw,270px)]">
+                    <div className="relative aspect-square w-[clamp(100px,15vw,200px)] md:w-[clamp(180px,20vw,270px)]">
                         <Image 
                             src = {"/assets/lock.png"}
                             alt = "cover art"
