@@ -50,7 +50,7 @@ export default function RootLayout({
           {children}
         </div>
         <footer className = "flex-shrink-0 text-center py-1 mb-2">
-          <h1 className = "text-white/90 text-sm md:text-3xl">powered by hyveout</h1>
+          <h1 className = "text-white/60 text-sm md:text-2xl">powered by hyveout</h1>
         </footer>
       </body>
     </html>
