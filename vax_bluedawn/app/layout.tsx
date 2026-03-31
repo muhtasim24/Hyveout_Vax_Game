@@ -48,7 +48,7 @@ export default function RootLayout({
         <div className="min-h-0 flex flex-col justify-center items-center overflow-hidden">
           {children}
         </div>
-        <footer className = "flex-shrink-0 text-center pt-6">
+        <footer className = "flex-shrink-0 text-center pt-4">
           <h1 className = "text-white text-xl md:text-3xl">powered by hyveout</h1>
         </footer>
       </body>

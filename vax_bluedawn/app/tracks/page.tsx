@@ -51,7 +51,7 @@ export default async function Tracks() {
 
             </div>
 
-            <Link href="/" className="pt-10">
+            <Link href="/" className="pt-4 md:pt-10">
                 <BirdBtn/>
             </Link>
         </div>
