@@ -51,7 +51,7 @@ export default async function Tracks() {
 
             </div>
 
-            <Link href="/" className="flex-shrink-0">
+            <Link href="/" className="flex-shrink-0 mt-auto">
                 <BirdBtn/>
             </Link>
         </div>
