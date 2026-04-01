@@ -22,8 +22,15 @@ const blueScreen = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vax Blue Dawn",
-  description: "Hyveout: Blue Dawn Interactive Experience",
+  title: "Blue Dawn",
+  description: "A blue dawn...",
+  keywords: ["blue dawn", "vax", "slayr", "praizewa", "wa", "rexv2"],
+  openGraph: {
+    title: "Blue Dawn",
+    description: "A blue dawn...",
+    url: "https://bluedawn.online",
+    images: ["/assets/logo.png"], // shows when shared on social
+},
 };
 
 export default function RootLayout({
