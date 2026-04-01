@@ -4,6 +4,7 @@ import Image from "next/image";
 import "./globals.css";
 import localFont from "next/font/local";
 import BackgroundMedia from "@/components/backgroundMedia";
+import FloatingStars from "@/components/floatingStars";
 
 const player2 = Press_Start_2P( {
   weight: '400',
@@ -37,6 +38,7 @@ export default function RootLayout({
         style={ {height:'100dvh'}}
       >
         <BackgroundMedia/>
+        <FloatingStars/>
         <div className="flex-shrink-0 flex justify-center items-center z-[-9] floatLogo">
           <Image 
             src={"/assets/logo.png"} 
