@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GFS_Didot, Press_Start_2P } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Image from "next/image";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -24,7 +25,7 @@ const blueScreen = localFont({
 export const metadata: Metadata = {
   title: "Blue Dawn",
   description: "A blue dawn...",
-  keywords: ["blue dawn", "vax", "slayr", "praizewa", "wa", "rexv2"],
+  keywords: ["blue dawn", "vax", "slayr", "praizewa", "wa", "rexv2", "blue dawn vax", "vax blue dawn"],
   openGraph: {
     title: "Blue Dawn",
     description: "A blue dawn...",
@@ -61,6 +62,7 @@ export default function RootLayout({
         <footer className = "flex-shrink-0 text-center py-1 mb-2">
           <h1 className = "text-white/60 text-sm md:text-2xl">powered by hyveout</h1>
         </footer>
+        <GoogleAnalytics gaId="G-QW5WL93P9T" />
       </body>
     </html>
   );
