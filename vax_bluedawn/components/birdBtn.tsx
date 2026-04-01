@@ -13,7 +13,6 @@ export default function BirdBtn() {
       className="relative inline-block cursor-pointer group bird-float"
       onClick = {() => setClicked(true)}
       onTouchStart = { () => setPressed(true)}
-      onTouchEnd = { () => setPressed(false)}
     >
        {/* Red bird: show when clicked, hovered, or touch pressed */}
        {(clicked || pressed) ? (
