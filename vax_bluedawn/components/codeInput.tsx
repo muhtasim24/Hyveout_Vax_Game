@@ -25,7 +25,13 @@ export default function CodeInput( {onCorrectCode} : Props) {
     if (value.length === 4) {
       (document.getElementById("code-input") as HTMLInputElement)?.blur();
       if (value === "0424") {
-        onCorrectCode();
+        // onCorrectCode();
+        // ONCE CODE IS REVEALED, DELETE EVERYTHING AFTER THIS COMMENT TILL THE ELSE
+        setError(true); // take this line out and uncomment above when code ready for release
+        setTimeout( () => {
+          setError(false);
+          setCode("")
+        }, 600)
       } else {
         setError(true);
 
