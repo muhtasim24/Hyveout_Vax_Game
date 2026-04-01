@@ -5,17 +5,16 @@ import Image from "next/image";
 
 
 export default function BirdBtn() {
-  const [clicked, setClicked] = useState(false);
-  const [pressed, setPressed] = useState(false);
+  const [active, setActive] = useState(false);
 
   return (
     <div
       className="relative inline-block cursor-pointer group bird-float"
-      onClick = {() => setClicked(true)}
-      onTouchStart = { () => setPressed(true)}
+      onClick = {() => setActive(true)}
+      onTouchStart = { () => setActive(true)}
     >
        {/* Red bird: show when clicked, hovered, or touch pressed */}
-       {(clicked || pressed) ? (
+       {(active) ? (
         <Image
           src="/assets/redbird.png"
           alt="red bird"
