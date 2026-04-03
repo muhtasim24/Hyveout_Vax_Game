@@ -25,7 +25,7 @@ const blueScreen = localFont({
 export const metadata: Metadata = {
   title: "Blue Dawn",
   description: "A blue dawn...",
-  keywords: ["blue dawn", "vax", "slayr", "praizewa", "wa", "rexv2", "blue dawn vax", "vax blue dawn"],
+  keywords: ["blue dawn", "vax", "slayr", "praizewa", "wa", "rexv2", "blue dawn vax", "vax blue dawn", "hyveout", "vax game", "hyveout games"],
   openGraph: {
     title: "Blue Dawn",
     description: "A blue dawn...",
