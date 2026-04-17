@@ -15,7 +15,7 @@ export default function Snippets() {
                 <div className = "grid grid-cols-1 gap-8 md:grid-cols-2 overflow-y-auto no-scrollbar md:overflow-hidden max-h-[350px] md:max-h-none p-6">
                     <SnippetVid video = {"/videos/snippet1.mp4"} locked = {false}/>
                     <SnippetVid video = {"/videos/snippet2.mp4"} locked = {false}/>
-                    <SnippetVid video = {img} locked = {true}/>
+                    <SnippetVid video = {"/videos/snippet3.mp4"} locked = {false}/>
                     <SnippetVid video = {img} locked = {true}/>
                 </div>
             </div>
