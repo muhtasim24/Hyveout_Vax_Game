@@ -11,6 +11,8 @@ export default function Home() {
   const router = useRouter();
 
   function handleCorrectCode() {
+    const audio = new Audio("/audio/audio.mp3");
+    audio.play();
     setShowAnimation(true);
   }
 
@@ -29,8 +31,9 @@ export default function Home() {
       </div>
 
       {showAnimation && (
+        <div className="fixed inset-0 bg-white z-[999] flex items-center justify-center">
         <video
-          className="fixed inset-0 w-full h-full object-cover z-[999]"
+          className="w-full h-full object-contain md:object-cover"
           src = "/animation.mp4"
           autoPlay
           muted
@@ -39,6 +42,7 @@ export default function Home() {
           onCanPlay={ (e) => e.currentTarget.play()}
           onEnded = { () => router.push("/tracks")}
         />
+        </div>
       )} 
     </div>
   );

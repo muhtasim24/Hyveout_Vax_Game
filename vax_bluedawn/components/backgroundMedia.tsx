@@ -21,7 +21,7 @@ export default function BackgroundMedia() {
     // if videoFails, we show img
     if (videoFailed) {
         return (
-            <Image
+            <img
                 src="/assets/newFallBack.jpg"
                 alt="background img static failback"
                 className="fixed w-full h-full object-cover z-[-10]"

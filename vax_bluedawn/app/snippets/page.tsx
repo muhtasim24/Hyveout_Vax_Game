@@ -16,7 +16,7 @@ export default function Snippets() {
                     <SnippetVid video = {"/videos/snippet1.mp4"} locked = {false}/>
                     <SnippetVid video = {"/videos/snippet2.mp4"} locked = {false}/>
                     <SnippetVid video = {"/videos/snippet3.mp4"} locked = {false}/>
-                    <SnippetVid video = {img} locked = {true}/>
+                    <SnippetVid video = {"/videos/snippet4.mp4"} locked = {false}/>
                 </div>
             </div>
 

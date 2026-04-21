@@ -4,6 +4,7 @@ import TrackSelect from "@/components/trackSelect";
 import Image from "next/image";
 import BirdBtn from "@/components/birdBtn";
 import {Press_Start_2P} from "next/font/google";
+import CoverArt from "@/components/coverArt";
 
 const player2 = Press_Start_2P( {
     weight: '400',
@@ -29,14 +30,7 @@ export default async function Tracks() {
                 <div className="flex flex-col items-center flex-1 gap-2">
                     <h1 className={`${player2.className} text-blue-500 font-bold text-xl md:text-2xl lg:text-3xl md:-mt-2 [text-shadow:_1px_0_0_white,_-1px_0_0_white,_0_1px_0_white,_0_-1px_0_white] `}>4/24/26</h1>
                     
-                    <div className="relative aspect-square w-[15vh] md:w-[clamp(150px,20vw,270px)]">
-                        <Image 
-                            src = {"/assets/lock.png"}
-                            alt = "cover art"
-                            fill
-                            className="bg-white object-contain"
-                        />
-                    </div>
+                    <CoverArt/>
                 </div>
 
                 {/* RIGHT SIDE DESKTOP */}
